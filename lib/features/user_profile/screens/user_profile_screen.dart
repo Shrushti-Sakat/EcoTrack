@@ -348,8 +348,8 @@ class _UserProfileScreenState extends State<UserProfileScreen>
               return 'Please enter your age';
             }
             final age = int.tryParse(value);
-            if (age == null || age < 1 || age > 120) {
-              return 'Please enter a valid age';
+            if (age == null || age < 10 || age > 120) {
+              return 'Age must be at least 10 years';
             }
             return null;
           },
@@ -548,7 +548,7 @@ class _UserProfileScreenState extends State<UserProfileScreen>
             padding: const EdgeInsets.all(20),
             child: Row(
               children: [
-                Text(
+                const Text(
                   'Select State',
                   style: AppTextStyles.heading3,
                 ),
@@ -845,7 +845,7 @@ class _UserProfileScreenState extends State<UserProfileScreen>
             padding: const EdgeInsets.all(20),
             child: Row(
               children: [
-                Text(
+                const Text(
                   'Select Country',
                   style: AppTextStyles.heading3,
                 ),
@@ -949,7 +949,7 @@ class _UserProfileScreenState extends State<UserProfileScreen>
             padding: const EdgeInsets.all(20),
             child: Row(
               children: [
-                Text(
+                const Text(
                   'Select City',
                   style: AppTextStyles.heading3,
                 ),
@@ -1419,10 +1419,10 @@ class _UserProfileScreenState extends State<UserProfileScreen>
         return false;
       }
       final age = int.tryParse(_ageController.text);
-      if (age == null || age < 1 || age > 120) {
+      if (age == null || age < 10 || age > 120) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: const Text('Please enter a valid age'),
+            content: const Text('Age must be at least 10 years'),
             backgroundColor: AppColors.error,
             behavior: SnackBarBehavior.floating,
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
@@ -1458,9 +1458,9 @@ class _UserProfileScreenState extends State<UserProfileScreen>
         return;
       }
       final age = int.tryParse(_ageController.text);
-      if (age == null || age < 1 || age > 120) {
+      if (age == null || age < 10 || age > 120) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Please enter a valid age')),
+          const SnackBar(content: Text('Age must be at least 10 years')),
         );
         return;
       }

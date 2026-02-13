@@ -45,8 +45,8 @@ class UserProfileProvider extends ChangeNotifier {
       if (name.trim().isEmpty) {
         throw Exception('Name is required');
       }
-      if (age < 1 || age > 120) {
-        throw Exception('Please enter a valid age');
+      if (age < 10 || age > 120) {
+        throw Exception('Age must be at least 10 years');
       }
       if (city.trim().isEmpty) {
         throw Exception('City is required');
@@ -93,8 +93,8 @@ class UserProfileProvider extends ChangeNotifier {
       if (name != null && name.trim().isEmpty) {
         throw Exception('Name cannot be empty');
       }
-      if (age != null && (age < 1 || age > 120)) {
-        throw Exception('Please enter a valid age');
+      if (age != null && (age < 10 || age > 120)) {
+        throw Exception('Age must be at least 10 years');
       }
       if (city != null && city.trim().isEmpty) {
         throw Exception('City cannot be empty');

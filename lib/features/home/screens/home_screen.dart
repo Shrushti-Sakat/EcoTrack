@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../shared/widgets/custom_widgets.dart';
 import '../../user_profile/providers/user_profile_provider.dart';
-import '../../user_profile/screens/user_profile_screen.dart';
 import '../../user_profile/screens/profile_summary_screen.dart';
 import '../../usage_data/providers/usage_data_provider.dart';
 import '../../usage_data/screens/usage_data_entry_screen.dart';
@@ -35,7 +34,10 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
       CurvedAnimation(parent: _animationController, curve: Curves.easeOut),
     );
     
-    _initializeApp();
+    // Delay initialization until after the first frame to avoid setState during build
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _initializeApp();
+    });
   }
 
   Future<void> _initializeApp() async {
