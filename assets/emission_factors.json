@@ -1,0 +1,77 @@
+{
+  "regions": {
+    "india": {
+      "name": "India",
+      "electricity_kg_per_kwh": 0.82,
+      "car_petrol_kg_per_km": 0.21,
+      "car_diesel_kg_per_km": 0.27,
+      "car_electric_kg_per_km": 0.05,
+      "bus_kg_per_km": 0.089,
+      "train_kg_per_km": 0.041,
+      "motorcycle_kg_per_km": 0.103,
+      "auto_rickshaw_kg_per_km": 0.08
+    },
+    "usa": {
+      "name": "United States",
+      "electricity_kg_per_kwh": 0.42,
+      "car_petrol_kg_per_km": 0.24,
+      "car_diesel_kg_per_km": 0.29,
+      "car_electric_kg_per_km": 0.03,
+      "bus_kg_per_km": 0.089,
+      "train_kg_per_km": 0.041,
+      "motorcycle_kg_per_km": 0.103,
+      "auto_rickshaw_kg_per_km": 0.08
+    },
+    "uk": {
+      "name": "United Kingdom",
+      "electricity_kg_per_kwh": 0.23,
+      "car_petrol_kg_per_km": 0.19,
+      "car_diesel_kg_per_km": 0.24,
+      "car_electric_kg_per_km": 0.02,
+      "bus_kg_per_km": 0.089,
+      "train_kg_per_km": 0.035,
+      "motorcycle_kg_per_km": 0.103,
+      "auto_rickshaw_kg_per_km": 0.08
+    },
+    "eu": {
+      "name": "European Union",
+      "electricity_kg_per_kwh": 0.28,
+      "car_petrol_kg_per_km": 0.18,
+      "car_diesel_kg_per_km": 0.22,
+      "car_electric_kg_per_km": 0.02,
+      "bus_kg_per_km": 0.068,
+      "train_kg_per_km": 0.033,
+      "motorcycle_kg_per_km": 0.092,
+      "auto_rickshaw_kg_per_km": 0.08
+    },
+    "australia": {
+      "name": "Australia",
+      "electricity_kg_per_kwh": 0.79,
+      "car_petrol_kg_per_km": 0.22,
+      "car_diesel_kg_per_km": 0.27,
+      "car_electric_kg_per_km": 0.06,
+      "bus_kg_per_km": 0.089,
+      "train_kg_per_km": 0.041,
+      "motorcycle_kg_per_km": 0.103,
+      "auto_rickshaw_kg_per_km": 0.08
+    },
+    "china": {
+      "name": "China",
+      "electricity_kg_per_kwh": 0.58,
+      "car_petrol_kg_per_km": 0.21,
+      "car_diesel_kg_per_km": 0.27,
+      "car_electric_kg_per_km": 0.04,
+      "bus_kg_per_km": 0.089,
+      "train_kg_per_km": 0.041,
+      "motorcycle_kg_per_km": 0.103,
+      "auto_rickshaw_kg_per_km": 0.08
+    }
+  },
+  "global": {
+    "walking_kg_per_km": 0.0,
+    "cycling_kg_per_km": 0.0,
+    "smartphone_kg_per_hour": 0.008,
+    "video_streaming_kg_per_hour": 0.036,
+    "phone_charge_kg_per_full": 0.008
+  }
+}
