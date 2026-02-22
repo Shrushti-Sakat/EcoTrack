@@ -1,0 +1,58 @@
+﻿Running Gradle task 'assembleDebug'...                          
+flutter : lib/features/sensors/services/carbon_sen
+sor_service.dart:5:1: Error: 'ActivityType' is 
+imported from both 'package:carbon_footprint_app/f
+eatures/sensors/services/sensor_activity_detector.
+dart' and 'package:geolocator_apple/src/types/acti
+vity_type.dart'.
+At line:1 char:1
++ flutter build apk --debug 2>&1 | Out-File 
+-FilePath build_log.txt -En ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (lib/ 
+   features/se...ity_type.dart'.:String) [], Rem  
+  oteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+import 'sensor_activity_detector.dart';
+^^^^^^^^^^^^
+lib/features/sensors/services/carbon_sensor_servic
+e.dart:31:25: Error: 'ActivityType' is imported 
+from both 'package:carbon_footprint_app/features/s
+ensors/services/sensor_activity_detector.dart' 
+and 'package:geolocator_apple/src/types/activity_t
+ype.dart'.
+      detectedActivity: ActivityType.stationary,
+                        ^^^^^^^^^^^^
+lib/features/sensors/services/carbon_sensor_servic
+e.dart:82:35: Error: 'ActivityType' is imported 
+from both 'package:carbon_footprint_app/features/s
+ensors/services/sensor_activity_detector.dart' 
+and 'package:geolocator_apple/src/types/activity_t
+ype.dart'.
+  ActivityType _currentActivity = 
+ActivityType.stationary;
+                                  ^^^^^^^^^^^^
+Target kernel_snapshot_program failed: Exception
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task 
+':app:compileFlutterBuildDebug'.
+> Process 'command 
+'C:\Users\Shrushti\flutter\bin\flutter.bat'' 
+finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack 
+trace.
+> Run with --info or --debug option to get more 
+log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 7s
+Running Gradle task 'assembleDebug'...                              8.0s
+Gradle task assembleDebug failed with exit code 1
